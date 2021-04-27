@@ -41,7 +41,8 @@
 
   font-size: 102px;
   font-weight: bold;
-  width: 730px;
+  max-width: 730px;
+  width: 100%;
   line-height: 96px;
   margin: 0;
   z-index: 4;
@@ -53,7 +54,8 @@
   bottom: 30px;
   left: 64px;
   font-size: 18px;
-  width: 388px;
+  max-width: 388px;
+  width: 100%;
   line-height: 25px;
   font-weight: normal;
   text-align: left;
@@ -99,7 +101,7 @@
   margin: 100px 0px 0px;
 }
 
-.two-columns__breef {
+.two-columns__brief {
   width: 175px;
   color: #2f80ed;
   font-size: 18px;
@@ -127,7 +129,7 @@
 }
 
 
-.two-columns__paragraph_span-accent {
+.two-columns__span-accent {
   font-weight: bold;
 }
 
@@ -136,22 +138,23 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 100px 0 100px;
 }
 
 .section-title {
   width: 60%;
-  margin: 90px 0px 20px;
   display: flex;
   justify-content: center;
   line-height: 1.15;
   font-size: 60px;
   font-weight: bold;
+  margin: 0 0 20px;
   
 }
 
 .section-subtitle {
   width: 60%;
-  margin: 0;
+  margin: 0 0 20px;
   display: flex;
   justify-content: center;
   font-weight: normal;
@@ -160,12 +163,13 @@
 }
 
 .table {
-  margin: 0;
   width: 1100px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 100px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .table__cell {
@@ -269,13 +273,16 @@
 }
 
 
-
-.kaufman_triangle {
+.kaufman__triangle {
   width: 877px;
+  height: 877px;
   position: absolute;
-  top: 0;
+  top: 0px;
   right: -210px;
   z-index: 1;
+  margin: 0;
+  background-image: url(../images/kaufman-triangle.svg);
+  background-size: cover;
 }
 
 .footer {
@@ -290,15 +297,16 @@
   width: 90%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content:space-between;
   margin: 60px 0px 40px;
 }
 
 .footer__column_content_copyright {
-  display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content:space-between;
   flex-basis: 711px;
+  margin: 0;
+  width: auto;
 }
 
 .footer__author {
@@ -332,10 +340,15 @@
   margin: 0px 10px 0px 0px;
 }
 
+
+
 .footer__column_content_info {
-  display: flex;
+  
   flex-direction: column;
   align-items: flex-start; 
+  justify-content: flex-start;
+  margin: 0;
+  width: auto;
   
 }
 
@@ -343,9 +356,12 @@
   margin-bottom: 16px;
 }
 
+
 .footer__column_content_social {
-  display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  margin: 0;
+  width: auto;
 }
 
 .footer__column_content_social a:last-child {
